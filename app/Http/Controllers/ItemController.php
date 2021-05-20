@@ -35,7 +35,6 @@ class ItemController extends Controller
         $item = new Item();
         $item->name = $request->item['name'];
         $item->save();
-
         return response()->json(['message' => 'success', 'item' => $item], 200);
     }
 
